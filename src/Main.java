@@ -2,11 +2,17 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Pizza basePizza = new Pizza(false);
-        basePizza.addExtraCheese();
-        basePizza.addExtraToppings();
-        basePizza.takeaway();
-        basePizza.getBill();
+//        Pizza basePizza = new Pizza(true );
+//        basePizza.addExtraToppings();
+//        basePizza.addExtraCheese();
+//        basePizza.takeaway();
+//        basePizza.getBill();
 
+        DeluxPizza dp = new DeluxPizza(false);
+        dp.takeaway();
+        dp.getBill();
     }
+
+
+
 }

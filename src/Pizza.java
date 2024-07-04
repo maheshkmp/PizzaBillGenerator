@@ -25,20 +25,17 @@ public class Pizza {
 
     public void addExtraCheese(){
         isExtraCheeseAdded = true;
-        System.out.println("Extra cheese added");
         this.price += extraCheesePrice;
 
     }
 
     public void addExtraToppings(){
         isExtraToppingsAdded = true;
-        System.out.println("Extra toppings added");
         this.price += extraToppingsPrice;
     }
 
     public void takeaway(){
         isOptedForTakeAway = true;
-        System.out.println("Take away opted");
         this.price += backpackPrice;
 
     }
@@ -46,6 +43,7 @@ public class Pizza {
     public void getBill(){
         String bill = "";
         System.out.println("Pizza: " +basePizzaPrice);
+
         if(isExtraCheeseAdded) {
             bill += "Extra Cheese Added: " + extraCheesePrice + "\n";
         }
@@ -59,11 +57,14 @@ public class Pizza {
 
         }
 
+        bill += "Bill: " +this.price + "\n";
+        System.out.println(bill);
+
     }
 }
 
 
-/***
+/**
  * Base Pizza: 300
  * Extra Cheese: 100
  * Extra Toppings: 150
